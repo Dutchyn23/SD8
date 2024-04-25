@@ -8,7 +8,7 @@ from .models import Choice
 class QuestionForm(forms.ModelForm):
     class Meta:
         model = Question
-        fields = ['question_text','pub_date']
+        fields = ['question_text']
 
 
 class ChoiceForm(forms.ModelForm):

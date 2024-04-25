@@ -1,5 +1,6 @@
-<h1>Are you sure you want to delete "{{ question.question_text }}"?</h1>
+<h1>Delete Question</h1>
+<p>Are you sure you want to delete the question: "{{ question.question_text }}"?</p>
 <form method="post">
-  {% csrf_token %}
-  <button type="submit">Yes, delete</button>
+    {% csrf_token %}
+    <button type="submit">Delete</button>
 </form>
